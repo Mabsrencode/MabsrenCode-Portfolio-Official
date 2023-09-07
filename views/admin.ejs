@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../includes/meta') %>
+    <title>Admin | MabsrenCode</title>
+    <%- include('../includes/favicon') %>
+    <link rel="stylesheet" href="./css/shared-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/admin.css" type="text/css">
+</head>
+<body> 
+    <% if (error) { %>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <h3>Error</h3>
+            <p>Invalid username or password. Please try again.</p>
+            <button onclick="hideModal()">OK</button>
+        </div>
+    </div>
+        <% }%>
+    <h1>Admin Login</h1>
+   
+    
+    <form method="POST" action="/admin" class="admin-form">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <script defer>
+        function hideModal() {
+            const modal = document.getElementById("errorModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

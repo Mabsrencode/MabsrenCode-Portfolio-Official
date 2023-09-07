@@ -1,0 +1,49 @@
+<nav class="nav" style="position: fixed;">
+    <div class="logo logo-home">
+        <a href="/"><img src="/images/logo-light.png" alt="Logo"></a>
+    </div>
+    <div class="hamburger hamburger-home">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="navbar navbar-home">
+        <li>
+            <a href="/blog-post">Blogs</a>
+        </li>
+        <!-- <li>
+            <a href="/terms">Terms</a>
+        </li> -->
+    </ul>
+</nav>
+<script defer>
+      const navbar = gsap.from('.nav', { 
+        yPercent: -100,
+        paused: true,
+        duration: 0.2
+      }).progress(1);
+      
+      ScrollTrigger.create({
+        start: "top top",
+        end: 99999,
+        onUpdate: (self) => {
+          self.direction === -1 ? navbar.play() : navbar.reverse()
+        }
+      });
+
+      const hamburger = document.querySelector(".hamburger-home");
+      const navLinks = document.querySelector(".navbar-home");
+      const links = document.querySelectorAll(".navbar-home li");
+
+      hamburger.addEventListener("click", () => {
+          //Animate Links
+          // navbar.classList.toggle("wide");
+          navLinks.classList.toggle("open-home");
+          links.forEach((link) => {
+            link.classList.toggle("fade-home");
+          });
+
+          //Hamburger Animation
+          hamburger.classList.toggle("toggle-home");
+        });
+</script>

@@ -1,0 +1,125 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--paragraph-font);
+  color: var(--bg-color);
+}
+body {
+  background-color: #fff;
+}
+main {
+  margin-top: 10rem;
+}
+
+.header {
+  margin-top: 1rem;
+}
+.posts-container {
+  width: 60%;
+}
+.mini-card {
+  width: 40%;
+  height: 100%;
+  background-color: black;
+}
+.header h1,
+.posts-container h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.header p {
+  text-align: center;
+}
+.header p,
+.posts-container p {
+  font-size: var(--paragraph-font-size);
+}
+.posts-container h1 {
+  text-align: center;
+}
+.posts-container .found {
+  text-align: center;
+  font-size: var(--paragraph-font-size);
+}
+.posts-container article {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  border: 3px solid var(--bg-color);
+  margin: 3rem auto;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 10px 0px var(--bg-color);
+  transition: 300ms;
+  padding-inline: 2rem;
+}
+article:hover {
+  box-shadow: 0px 0px 10px var(--bg-color);
+  scale: 1.01;
+}
+.article-descriptions {
+  max-width: 50rem;
+  margin: 3rem auto;
+}
+.article-descriptions h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+.article-descriptions p {
+  text-align: justify;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-top: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.article-descriptions .blog-post-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  font-size: 20px;
+  font-family: var(--paragraph-font);
+  border: none;
+  outline: none;
+  padding: 0.5rem 3rem;
+  background-color: var(--primary-color);
+  border: 2px solid var(--bg-color);
+  border-radius: 2px;
+  transition: 200ms;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--bg-color);
+}
+.btn:hover {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+iframe {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px var(--bg-color);
+  z-index: 1;
+}
+.blog-post-meta {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+}
+@media only screen and (max-width: 940px) {
+  main {
+    margin-inline: 1rem;
+  }
+}

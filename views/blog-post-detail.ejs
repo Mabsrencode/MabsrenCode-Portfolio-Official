@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/meta') %>
+        <title>Blogs | MabsrenCode</title>
+        <%- include('../includes/favicon') %>
+            <link rel="stylesheet" href="/css/shared-style.css" type="text/css">
+            <link rel="stylesheet" href="/css/blog-details.css" type="text/css">
+            <link rel="stylesheet" href="/css/public-footer.css" type="text/css">
+            <link rel="stylesheet" href="/css/public-navbar.css" type="text/css">
+        <%- include('../includes/scripts') %>
+</head>
+
+<body>
+    <%- include('../includes/navbar') %>
+        <main>
+            <div class="header">
+                <article>
+                    <div class="article-descriptions">
+                        <h4>
+                            <%= blogPost.title %>
+                        </h4>
+                        <p>
+                            <%= blogPost.description %>
+                        </p>
+                        <div class="blog-post-meta" id="blog_post_embed">
+                            <%- blogPost.embed %>
+                        </div>
+                        <div class="blog-post-actions">
+                            <a class="btn" href="<%= blogPost.link  %>" target="_blank">View</a>  
+                        </div>
+                    </div>
+                
+                </article>
+        </main>
+        <%- include('../includes/footer') %>
+    <script type="text/javascript" src="/scripts/blog-post.js"></script>
+</body>
+
+</html>

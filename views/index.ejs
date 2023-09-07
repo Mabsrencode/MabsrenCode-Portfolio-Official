@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../includes/meta') %>
+    <!--<meta name="color-scheme" content="dark light">-->
+    <title>MabsrenCode</title>
+    <%- include('../includes/favicon') %>
+    <!------scripts------->
+    
+    <!------scripts------->
+    <!-------css------->
+    <link rel="stylesheet" href="./css/shared-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/home-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/about-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/projects-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/contact-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/loading-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/feedback.css" type="text/css">
+    <link rel="stylesheet" href="./css/chat.css" type="text/css">
+    <!-- media queries -->
+    <!-- <link rel="stylesheet" href="./css/media-queries/media-home.css" type="text/css">
+    <link rel="stylesheet" href="./css/media-queries/media-about.css" type="text/css">
+    <link rel="stylesheet" href="./css/media-queries/media-projects.css" type="text/css">
+    <link rel="stylesheet" href="./css/media-queries/media-contact.css" type="text/css"> -->
+    <!-------css------->
+   
+</head>
+<body>
+
+    
+    <!----custom cursor start-->
+    
+    <!---------------cursor end--------------->
+    <!---------------HEADER NAVBAR START------------------->
+<!---------background-black start-->
+<div class="loading">
+    <div class="loading-title">
+        <div class="loading-logo">
+            <img src="./images/favicon-dark.png" alt="mabsrencode-logo">
+        </div>
+        <h2>MabsrenCode</h2>
+    </div>
+    
+    <div class="loading-progress"></div>
+  </div>
+  
+        
+
+<!-------------HOME PAGE-->
+<div id="center-screen" class="ms-container ms-default">
+    		
+    <section id="home-section">
+        <i id="message-icon" class="fa-solid fa-message"></i>
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="header-indicator">
+                    <h2>Message</h2>
+                    <div class="status-indicator"></div>
+                </div><i id="message-cross-btn" class="fa-solid fa-circle-xmark"></i>
+            </div>
+        
+            <div id="messages" class="chat"></div>
+        
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Aa" autocomplete="off">
+                <button id="message-send-btn" type="submit">Send</button>
+            </form>
+            <button class="btn" id="start-button" onclick="startChat()">Start Chat</button>
+            <button class="btn" id="end-button" onclick="endChat()" disabled>End Chat</button>
+        </div>
+
+                        <nav class="nav">
+                            <div class="logo logo-home">
+                                <img src="./images/logo-light.png" alt="Logo">
+                            </div>
+                            <div class="hamburger hamburger-home">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                          
+                            
+                        
+                                <ul class="navbar navbar-home">
+                                    
+                                    <li>
+                                        <a href="#home-section">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about-section" class="ms-nav-link" data-ms-target="top-screen" data-ms-exit-animation="bottomleft" data-ms-enter-animation="bottomright">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#projects-section" class="ms-nav-link" data-ms-target="right-screen" data-ms-exit-animation="bottomright" data-ms-enter-animation="bottomleft">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact-section" class="ms-nav-link" data-ms-target="left-screen" data-ms-exit-animation="right" data-ms-enter-animation="left">Contact</a>
+                                    </li>
+                                </ul>
+                            
+                        </nav>
+                
+                     <!---------------HEADER NAVBAR END------------------->
+                    <!---------------------SECTION Home START----------------------->
+                    
+                    <!----container start-------------------->
+                <div class="container">
+                    <!---------------header start-->
+                    <div class="header">
+                        <div class="wrapper1">
+                            <h2 class="glitch1" data-text="Front-End">Front-End</h2><p class="paragraph paragraph1">I am an amateur Front-End Web Developer and UI Designer.</p>
+                        </div>
+                        <div class="wrapper2">
+                            <p class="paragraph paragraph2">Focus on creating things with interactions and animations.
+                                With a knack for turning problems and opportunities into user-driven strategic solutions with delightful and intuitive interface design.</p><h2 class="glitch2" data-text="Developer">Developer</h2>
+                        </div> 
+                        
+                    </div>
+                    <div class="wrapper3"><p>I am an amateur Front-End Web Developer and UI Designer. Focus on creating things with interactions and animations.
+                            With a knack for turning problems and opportunities into user-driven strategic solutions with delightful and intuitive interface design.</p>
+                    </div>
+                    <div class="skills-icon-home">
+                        <!-- <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><i class="fa-brands fa-react"></i></li>
+                            <li><i class="fa-brands fa-git-alt"></i></li>
+                            <li><i class="fa-brands fa-figma"></i></li>
+                        </ul> -->
+                        <!-- <marquee loop="-1" scrolldelay="500" behavior="scroll" scrollamount="60" direction="left"><i class="fa-brands fa-html5"></i></i>
+                            <i class="fa-brands fa-react"></i><i class="fa-brands fa-git-alt"></i><i class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-java"></i><i class="fa-brands fa-sass"></i><i class="fa-brands fa-laravel"></i><i class="fa-brands fa-node"></i><i class="fa-brands fa-square-js"></i><i class="fa-brands fa-php"></i>
+                            <i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-vuejs"></i><i class="fa-brands fa-bootstrap"></i></marquee> -->
+                            <div class="marquee">
+                                <ul class="marquee-content">
+                                    <li><i class="fa-brands fa-html5"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-free-code-camp"></i></li>
+                                    <li><i class="fab fa-dev"></i></li>
+                                    <li><i class="fab fa-react"></i></li>
+                                    <li><i class="fab fa-vuejs"></i></li>
+                                    <li><i class="fab fa-angular"></i></li>
+                                    <li><i class="fab fa-node"></i></li>
+                                    <li><i class="fa-brands fa-git-alt"></i></li>
+                                    <li><i class="fa-brands fa-sass"></i></li>
+                                    <li><i class="fab fa-docker"></i></li>
+                                    <li><i class="fa-brands fa-laravel"></i></li>
+                                </ul>
+                            </div>
+                        <!-- <marquee scrolldelay="70" behavior="scroll" direction="right"><i class="fa-brands fa-node"></i><i class="fa-brands fa-square-js"></i><i class="fa-brands fa-php"></i>
+                            <i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-vuejs"></i><i class="fa-brands fa-bootstrap"></i></marquee> -->
+                    </div>
+                    <!---------------header end-->
+                <!---------paragraph start------->
+                    <!-- <div class="paragraph">
+                        <div class="sentence1">
+                            <div class="focus-text"><p>Focus on creating things with interactions and animations.
+                                With a knack for turning problems and opportunities into user-driven strategic solutions with delightful and intuitive interface design.</p></div>
+                        </div>
+                         <div class="sentence2">
+                            <div class="amateur-text"><p>I am an amateur Front-End Web Developer and UI Designer</p></div>
+                        </div>
+                    </div> -->
+                <!---------paragraph end------->
+                </div>
+                <!----container end-------------------->
+                <!---------------------SECTION home END----------------------->
+                <footer class="home-footer">
+                        <ul class="socials">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://github.com/Mabsrencode" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/reniel-george-mababa-96a1a223b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                        </ul>
+                        <div class="copyright">
+                            <p>Copyright &copy;2022-2023 MabsrenCode. All rights reserved.</p>
+                        </div>
+                </footer>
+    </section>
+</div>
+    <!---------------------SECTION home END----------------------->
+    <!---------------------About section start------->
+<div id="top-screen" class="ms-container">
+    <section id="about-section">
+        
+            <nav class="nav nav-about">
+                <div class="logo logo-about">
+                    <img src="./images/logo-light.png" alt="Logo">
+                </div>
+                <div class="hamburger hamburger-about">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                    <ul class="navbar navbar-about">
+
+                        
+                        <li>
+                            <a href="#home-section" class="ms-nav-link" data-ms-target="center-screen" data-ms-exit-animation="right" data-ms-enter-animation="left">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-section" class="ms-nav-link" data-ms-target="bottom-screen" data-ms-exit-animation="topright" data-ms-enter-animation="topleft">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects-section" class="ms-nav-link" data-ms-target="right-screen" data-ms-exit-animation="bottomright" data-ms-enter-animation="topright">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-section" class="ms-nav-link" data-ms-target="left-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">Contact</a>
+                        </li>
+                    </ul>
+               
+            </nav>
+        
+            <div class="scroll-down scroll-sticky scroll-down-about">
+                <p  class="scroll-sticky">Scroll Down</p>
+                <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+                
+                
+            
+        
+            <div class="let-text">   
+                    <h2>Let's get to know each other</h2>
+            </div>
+        <div class="grid-text-img" id="grid-img">
+                <div class='text demo-text'>
+                     <h2><span class="art-text">WITHOUT&nbsp;</span><span class="art1-text art" data-text="ART">ART</span>&nbsp;<span class="art-text">&nbsp;THERE IS NO&nbsp;</span><span class="art2-text art" data-text="IMAGINATIONS">IMAGINATIONS</span></h2> 
+                </div>
+              <section class='demo-gallery'>
+                <ul class='wrapper demo-gallery1'>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-1.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-2.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-3.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-4.jpg' width='1240'>
+                  </li>
+                </ul>
+              </section>
+              <section class='demo-gallery'>
+                <ul class='wrapper demo-gallery2'>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-5.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-6.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-7.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-8.jpg' width='1240'>
+                  </li>
+                </ul>
+              </section>
+              <section class='demo-gallery'>
+                <ul class='wrapper demo-gallery3'>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-9.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-10.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-11.jpg' width='1240'>
+                  </li>
+                  <li>
+                    <img height='874' src='./images/gallery-img/gallery-img-12.jpg' width='1240'>
+                  </li>
+                </ul>
+              </section>
+            </div>
+        
+        
+        <section class="about">
+            <div id="about-title" class="about-title">
+                <div class="about-me-text">
+                    <h2 class="about-me-text-h2">About me</h2>
+                </div>
+                <div class="ren-image">
+                    <img class="ren-image-child" src="./images/edited3.png" alt="reniel-image">
+                </div>
+            </div>
+            <div class="about-pages">
+                <div class="about-box1">
+                    <div class="box1-parent">
+                        <div class="about-header-text1">
+                            <h2 class="reveal-text-first reniel-header">Hi! I am Reniel</h2>
+                            <br>
+                            <h2 class="reveal-text-first">Front-End</h2>
+                            <h2 class="reveal-text-first">Developer</h2>
+                        </div>
+                        <div class="about-header-paragraph">
+                            <p class="reveal-text-first-paragraph">I am an amateur Front-end Developer & UI Developer. Focused on creating things with interactions and animations. With a knack for turning problems and opportunities into user-driven strategic solutions with delightful and intuitive interface design. </p><br>
+                            <p class="reveal-text-first-paragraph">I enjoy spending time fixing minor details and learning new things about web development, particularly front-end and UI development, in order to improve my skills and knowledge. Also I like working in a team, you'll learn faster and much more. “As the saying goes, two heads are better than one.</p><br>
+                            <p class="reveal-text-first-paragraph">Sometimes I make mistakes, but those mistakes teach me how to make it better next time.</p>
+                        </div>
+                    </div>
+                </div>
+                <!---------BOX 2 START-->
+                <div class="about-box2">
+                    <div class="box2-parent">
+                        <div class="about-header-text2">
+                            <h2 class="reveal-text-second">Why me?</h2>
+                        </div>
+                        <div class="about-header-paragraph2">
+                            <p class="reveal-text-second-paragraph">I am a fast learner and am willing to learn more for the sake of the company. My goal is to help small and medium-sized companies to grow their audience. I can make your website responsive. I can make a website that meets your standards with quality and clean code.</p><br>
+                            <p class="reveal-text-second-paragraph">Moreover, I am a creative problem solver who is always up for a challenge. I am a quick learner who is always eager to keep up with the latest trends and technologies in the world of web development. I am also an excellent communicator who is able to work well in a team environment.</p><br>
+                            <p class="reveal-text-second-paragraph">I am a highly motivated individual who is passionate about web development. I take pride in my work and I am always striving to improve my skills and knowledge. I have a strong work ethic and I am able to work under pressure and meet deadlines.</p><br>
+                            <p class="reveal-text-second-paragraph">I believe that my skills, experience, and passion for web development make me a valuable asset to your organization. I am confident that I would be able to make a significant contribution to your team, and I would welcome the opportunity to discuss my qualifications in more detail.</p><br>
+                            <p class="reveal-text-second-paragraph">Let's work together to create game-changing experiences
+                                that will take your brand from bland to buzzworthy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-responsive">
+            <div class="box1-parent hidden">
+                <div class="about-header-text1 active">
+                    <h2 class="reveal-text-first reniel-header active">Hi! I am Reniel</h2>
+                    <br>
+                    <h2 class="reveal-text-first active">Front-End</h2>
+                    <h2 class="reveal-text-first active">Developer</h2>
+                </div>
+                <div class="about-header-paragraph">
+                    <p class="reveal-text-first-paragraph active">I am an amateur Front-end Developer & UI Developer. Focused on creating things with interactions and animations. With a knack for turning problems and opportunities into user-driven strategic solutions with delightful and intuitive interface design. </p><br>
+                    <p class="reveal-text-first-paragraph active">I enjoy spending time fixing minor details and learning new things about web development, particularly front-end and UI development, in order to improve my skills and knowledge. Also I like working in a team, you'll learn faster and much more. “As the saying goes, two heads are better than one.</p><br>
+                    <p class="reveal-text-first-paragraph active">Sometimes I make mistakes, but those mistakes teach me how to make it better next time.</p>
+                </div>
+            </div>
+            <div class="box2-parent hidden">
+                <div class="about-header-text2">
+                    <h2 class="reveal-text-second active">Why me?</h2>
+                </div>
+                <div class="about-header-paragraph2">
+                    <p class="reveal-text-second-paragraph active">I am a fast learner and am willing to learn more for the sake of the company. My goal is to help small and medium-sized companies to grow their audience. I can make your website responsive. I can make a website that meets your standards with quality and clean code.</p><br>
+                    <p class="reveal-text-second-paragraph active">Moreover, I am a creative problem solver who is always up for a challenge. I am a quick learner who is always eager to keep up with the latest trends and technologies in the world of web development. I am also an excellent communicator who is able to work well in a team environment.</p><br>
+                    <p class="reveal-text-second-paragraph active">I am a highly motivated individual who is passionate about web development. I take pride in my work and I am always striving to improve my skills and knowledge. I have a strong work ethic and I am able to work under pressure and meet deadlines.</p><br>
+                    <p class="reveal-text-second-paragraph active">I believe that my skills, experience, and passion for web development make me a valuable asset to your organization. I am confident that I would be able to make a significant contribution to your team, and I would welcome the opportunity to discuss my qualifications in more detail.</p><br>
+                    <p class="reveal-text-second-paragraph active">Let's work together to create game-changing experiences
+                        that will take your brand from bland to buzzworthy</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-skills">
+            <div class="skills-text active hidden">
+                    <h2 class="skills-header active">Skills</h2>
+            </div>
+            <div class="about-skills-parent">
+                
+                <dl>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-html5"></i>HTML</dt>
+                        <dd>I try to keep markup with semantics and accessibility in mind.
+                            I am currently learning WAI-ARIA.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-css3-alt"></i>CSS</dt>
+                        <dd>From basic styling, coding using variables, functions, etc. is possible with CSS. I'm currently learning Sass.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-square-js"></i>JavaScript</dt>
+                        <dd>
+                            It is possible to implement frequent UIs such as cursors, tabs, accordions, and modals. I'm currently learning native notation and mechanics.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-react"></i>React Js</dt>
+                        <dd>
+                            I use React for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript. And I'm still learning it.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-git-alt"></i>Git / GitHub</dt>
+                        <dd>When creating a personal site or blog site, we manage it on GitHub. I have no experience using it with multiple people, and I am practicing pseudo team development to learn a practical flow.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-figma"></i>Designing Tools</dt>
+                        <dd>
+                            I have designing experience from Photoshop, XD and Figma. The design of this site uses Figma.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-searchengin"></i>SEO</dt>
+                        <dd>
+                            I am currently working on improving my skills in Search Engine Optimization (SEO). SEO is the practice of optimizing
+                            websites to increase their visibility and ranking in search engine results pages. By learning SEO techniques, I aim to
+                            enhance the online presence of websites and drive organic traffic to them.</dd>
+                    </div>
+                    <div class="hidden">
+                        <dt><i class="fa-brands fa-node-js"></i>Node JS</dt>
+                        <dd>
+                            Node.js allows me to build scalable and efficient server-side applications, network applications, and web APIs using
+                            JavaScript, which I find incredibly versatile. As I continue to explore Node.js, I am gaining a deeper understanding of
+                            its event-driven, non-blocking I/O model, which enables high-performance and real-time applications. Through learning
+                            Node.js, I aim to expand my expertise in developing server-side solutions.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+        <div class="scroll-up scroll-sticky">
+            <i class="fa-sharp fa-solid fa-angle-up"></i>
+            <a href="#top-screen"><p>Tap to Scroll Up</p></a>
+        </div>
+        <!-- <footer class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy;2023 MabsrenCode. All rights reserved.</p>
+                </div>
+        </footer> -->
+        <%- include('../includes/footer') %>
+    </section>
+</div>
+    <!---------------------About section start------->
+    <!---------------------Projects section start------->
+<div id="right-screen" class="ms-container">
+    <section id="projects-section">
+        
+            <nav class="nav nav-projects">
+                <div class="logo logo-projects">
+                    <img src="./images/logo-light.png" alt="Logo">
+                </div>
+                <div class="hamburger hamburger-projects">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                    <ul class="navbar navbar-projects">
+        
+                        <li>
+                            <a href="#home-section" class="ms-nav-link" data-ms-target="center-screen" data-ms-exit-animation="topright" data-ms-enter-animation="bottomleft">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-section" class="ms-nav-link" data-ms-target="top-screen" data-ms-exit-animation="bottomright" data-ms-enter-animation="bottomleft">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects-section" class="ms-nav-link" data-ms-target="right-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-section" class="ms-nav-link" data-ms-target="left-screen" data-ms-exit-animation="topleft" data-ms-enter-animation="bottomright">Contact</a>
+                        </li>
+                    </ul>
+                
+            </nav>
+            <!-- <aside>
+                <ul>
+                    <li>Projects 1</li>
+                    <li>Projects 2</li>
+                    <li>Projects 3</li>
+                </ul>
+            </aside> -->
+            <section class="projects-header">
+                <div class="scroll-down scroll-sticky scroll-down-project">
+                    <p  class="scroll-sticky">Scroll Down</p>
+                    <i class="fa-sharp fa-solid fa-angle-down"></i>
+                </div>
+                    <h2 data-text="Portfolio">Portfolio</h2>
+                    <!-- <h4>2022-2023</h4> -->
+            </section>
+            <section class="projects-gallery">
+                <div class="projects-container">
+                    <div class="projects-container-content">
+                        <h3>TIC TAC TOE GAME</h3>
+                        <h4 class="project-number">PROJECT 1</h4>
+                        <p class="projects-content-paragraph">My first responsive game that I created through HTML, CSS, JavaScript.
+                            It was undoubtedly challenging for me to create a game like this,
+                            as I had to learn topics that aren't taught to 2nd year college students.
+                            For instance, I studied and engaged myself in using arrays, 
+                            if-else statement, and various types of looping.
+                        </p>
+                        <div class="projects-content-icons">
+                            <a href="https://github.com/Mabsrencode/tictactoe" target="_blank">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="https://mabsrencode.github.io/tictactoe/" target="_blank">Live Demo<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-container-img">
+                        <img src="./images/portfolio project images/Tictactoe.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="projects-gallery">
+                <div class="projects-container">
+                    <div class="projects-container-content">
+                        <h3>CALENDAR 2022</h3>
+                        <h4 class="project-number">PROJECT 2</h4>
+                        <p class="projects-content-paragraph">My first project during freshman year as I learned about <strong>SEMANTICS HTML, CSS-FLEX-BOX, CSS Pseudo-classes,
+                            CSS Pseudo-elements, GRID-ITEMS, </strong> and some <strong>DOM Manipulations.</strong>
+                        </p>
+                        <div class="projects-content-icons">
+                            <a href="https://github.com/Mabsrencode/Calendar-2022" target="_blank">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="https://mabsrencode.github.io/Calendar-2022/" target="_blank">Live Demo<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-container-img">
+                        <img src="./images/portfolio project images/calendar 2022.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="projects-gallery">
+                <div class="projects-container">
+                    <div class="projects-container-content">
+                        <h3>FOOD SERVICE</h3>
+                        <span>LANDING PAGE</span>
+                        <h4 class="project-number">PROJECT 3</h4>
+                        <p class="projects-content-paragraph">My first landing page during freshman year as I learned about Nested HTML, Selectors, CSS Positioning,
+                            margin, padding.
+                        </p>
+                        <div class="projects-content-icons">
+                            <a href="https://github.com/Mabsrencode/FoodService-Landing-Page" target="_blank">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="https://mabsrencode.github.io/FoodService-Landing-Page/" target="_blank">Live Demo<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-container-img">
+                        <img src="./images/portfolio project images/foodservice.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="projects-gallery">
+                <div class="projects-container">
+                    <div class="projects-container-content">
+                        <h3>DENTAL CLINIC</h3>
+                        <span>LANDING PAGE</span>
+                        <h4 class="project-number">PROJECT 4</h4>
+                        <p class="projects-content-paragraph">My second landing page during freshman year as I learned about Nested HTML, Selectors, CSS Positioning,
+                            margin, padding.
+                        </p>
+                        <div class="projects-content-icons">
+                            <a href="https://github.com/Mabsrencode/Dental-Clinic-Landing-Page" target="_blank">Code<i class="fa-brands fa-github"></i></a>
+                            <a href="https://mabsrencode.github.io/Dental-Clinic-Landing-Page/" target="_blank">Live Demo<i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-container-img">
+                        <img src="./images/portfolio project images/dental-clinic.png" alt="">
+                    </div>
+                </div>
+            </section> 
+            <section class="projects-gallery">
+                <div class="projects-container">
+                    <div class="projects-container-content">
+                        <h3>Recommendation App</h3>
+                        <h4 class="project-number">PROJECT 5</h4>
+                        <p class="projects-content-paragraph">My first dynamic Website using ejs node express.
+                        </p>
+                        <div class="projects-content-icons">
+                            <a href="https://github.com/Mabsrencode/Restaurant-Recommendation-App" target="_blank">Code<i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://restaurant-recommendation-app.onrender.com" target="_blank">Live Demo<i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-container-img">
+                        <img src="./images/portfolio project images/eatwell.png" alt="">
+                    </div>
+                </div>
+            </section>
+    </section>
+        <footer class="footer footer-projects">
+                <div class="copyright">
+                    <p>Copyright &copy;2022-2023 MabsrenCode. All rights reserved.</p>
+                </div>
+        </footer>
+</div>
+    <!---------------------projects section end------->
+    <!---------------------contact section start------->
+<div id="left-screen" class="ms-container">
+    <div id="configuration">
+        <div id="configuration-container" class="configuration-container">
+            <h4>Email Sent Successfully!</h4>
+            <button id="btn-success">Okay</button>
+        </div>
+        <div id="configuration-container-error" class="configuration-container-error">
+            <h4>Too many requests, Try again later.</h4>
+            <button id="btn-error">Okay</button>
+        </div>
+    </div>
+    <section id="contact-section">
+        
+            <nav class="nav nav-contact">
+                <div class="logo logo-contact">
+                    <img src="./images/logo-light.png" alt="Logo">
+                </div>
+                <div class="hamburger hamburger-contact">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                
+                    <ul class="navbar navbar-contact">
+
+                        <li>
+                            <a href="#home-section" class="ms-nav-link" data-ms-target="center-screen" data-ms-exit-animation="topright" data-ms-enter-animation="bottomleft">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-section" class="ms-nav-link" data-ms-target="top-screen" data-ms-exit-animation="bottomright" data-ms-enter-animation="bottomleft">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects-section" class="ms-nav-link" data-ms-target="right-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact-section" class="ms-nav-link" data-ms-target="left-screen" data-ms-exit-animation="topleft" data-ms-enter-animation="bottomright">Contact</a>
+                        </li>
+                    </ul>
+                
+            </nav>
+        
+        <section class="contact-container">
+                <form class="cnt-form">
+                    <div class="text-area">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="30" rows="10" placeholder="Start typing here..."></textarea>
+                    </div>
+                    <div class="contact-details">
+                        <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Full Name">
+                        </div>
+                        <div>
+                            <label for="email" required>Email</label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Ex. 09xxxxxxxxx">
+                        </div>
+                    </div>
+                    <div class="form-btn">
+                        <div>
+                            <input type="submit" id="btn-submit" class="submit" value="Submit" >
+                        </div>
+                        
+                        <div class="loader-submit" id="loader-submit"></div>
+                    </div>
+                    <div class="other-details">
+                        <h4>You can email me at &nbsp;</h4><a href = "mailto: dev.renielmababa@mabsrencode.com">dev.renielmababa@mabsrencode.com</a><h4>&nbsp; or send me a note above.</h4>
+                    </div>
+                    <div class="cv-btn">
+                        <a href="./docs/RENIEL_GEORGE_MABABA_CV.pdf" target="_blank">View CV</a>
+                    </div>
+                </form>
+              
+        </section>
+        <div id="feedback-btn"><i class="fa-regular fa-message"></i><h5>Feedback</h5></div>
+        <div id="feedback-container">
+            <i id="fa-circle-xmark" class="fa-solid fa-circle-xmark"></i>
+            <form class="feedback-form">
+                <h3>Feedback</h3>
+                <p>Write your concern and problem here about using the website. Thank you!</p>
+                <input type="email" name="feedback-email" placeholder="Email" id="feedback-email" required>
+                <textarea name="feedback-message" id="feedback-message" cols="30" rows="6" placeholder="Feedback" required></textarea>
+                <button type="submit" class="submit" id="feedback-form-btn">Send</button>
+            </form>
+                
+        </div>
+    <%- include('../includes/footer') %>
+    </section>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!---------------------About section start------->
+    <script defer>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const showAnim = gsap.from('.nav-about', { 
+        yPercent: -100,
+        paused: true,
+        duration: 0.2
+      }).progress(1);
+      
+      ScrollTrigger.create({
+        start: "top top",
+        end: 99999,
+        onUpdate: (self) => {
+          self.direction === -1 ? showAnim.play() : showAnim.reverse()
+        }
+      });
+      const showAnimate = gsap.from('.nav-contact', { 
+        yPercent: -100,
+        paused: true,
+        duration: 0.2
+      }).progress(1);
+    ScrollTrigger.create({
+            start: "top top",
+            end: 99999,
+            onUpdate: (self) => {
+                self.direction === -1 ? showAnimate.play() : showAnimate.reverse()
+            }
+        });
+      $(document).ready(function() { 
+                MultiScreen.init(); 
+                $('#topleft-via-top').click(function () {
+                    MultiScreen.switch_screens(
+                        {target_id: 'top-screen', enter_animation_command: 'top', exit_animation_command: 'bottom', chain_animation_options: 
+                            {target_id: 'topleft-screen', enter_animation_command: 'left', exit_animation_command: 'right'}
+                        });
+                });
+        });
+      </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./scripts/app.js"></script>
+    <script type="text/javascript" src="./scripts/index.js" defer></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/multi-screen.js"></script>
+    <script type="text/javascript" src="./scripts/responsive.js"></script>
+    <script type="text/javascript" src="./scripts/feedback.js"></script>
+    <script type="text/javascript" src="./scripts/client-chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.footer-public {
+  position: relative;
+  bottom: 0;
+  margin-block: 1rem 3rem;
+  width: 100%;
+}
+.footer-public .copyright > p {
+  font-family: var(--paragraph-font);
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.5;
+  color: var(--bg-color);
+}
+.footer-public .fa-brands {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: var(--bg-color) !important;
+}
+.footer-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-block: 3rem 3rem;
+}
+.footer-details div ul li a {
+  opacity: 0.7;
+  transition: 200ms;
+}
+.footer-details div ul li a:hover {
+  opacity: 1;
+}
+.footer-details a {
+  color: var(--bg-color) !important;
+  font-family: var(--paragraph-font);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.footer-details div > h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.socials {
+  display: flex;
+}
+.details:nth-child(2) {
+  margin-right: 15rem;
+}
+/*-------------------------footer icon hover animations start---------------------------------------*/
+.socials .fa-brands:hover {
+  animation: iconglitch 200ms infinite;
+}
+/*----------------- animations start--------------------------------*/
+@keyframes iconglitch {
+  0% {
+    text-shadow: 3px 2px rgba(255, 79, 113, 1), -3px -4px rgba(0, 254, 255, 1);
+  }
+  25% {
+    text-shadow: -3px -4px rgba(255, 79, 113, 1), 3px 4px rgba(0, 254, 255, 1);
+  }
+  50% {
+    text-shadow: 3px -2px rgba(255, 79, 113, 1), -4px 2px rgba(0, 254, 255, 1);
+  }
+  75% {
+    text-shadow: -4px -2px rgba(255, 79, 113, 1), -3px -2px rgba(0, 254, 255, 1);
+  }
+  100% {
+    text-shadow: -2px 0px rgba(255, 79, 113, 1), 3px -2px rgba(0, 254, 255, 1);
+  }
+}
+@media only screen and (max-width: 940px) {
+  .footer-details {
+    margin-inline: 4rem;
+  }
+}

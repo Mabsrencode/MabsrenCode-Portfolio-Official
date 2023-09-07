@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../includes/meta') %>
+    <title>Success - MabsrenCode</title>
+    <%- include('../includes/favicon') %>
+    <link rel="stylesheet" href="./css/shared-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/public-footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/public-navbar.css" type="text/css">
+    <%- include('../includes/scripts') %>
+    <style>
+        body{
+            background-color: var(--bg-color);
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--primary-font);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--primary-color);
+            & h1{
+                font-size: 5rem;
+            }
+            & a{
+                margin-top: 3rem;
+                font-size: 20px;
+                font-family: var(--paragraph-font);
+                border: none;
+                outline: none;
+                padding: 0.5rem 3rem;
+                background-color: var(--bg-color);
+                border: 2px solid var(--primary-color);
+                border-radius: 2px;
+                transition: 200ms;
+                font-weight: 700;
+                cursor: pointer;
+                
+            }
+            & a:hover{
+                    background-color: var(--primary-color);
+                    color: var(--bg-color);
+                }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Success!</h1>
+        <a href="/blog-post">View</a>
+    </div>
+    
+</body>
+</html>

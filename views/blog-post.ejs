@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../includes/meta') %>
+    <title>Blogs | MabsrenCode</title>
+    <%- include('../includes/favicon') %>
+    <link rel="stylesheet" href="./css/shared-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/blogs.css" type="text/css">
+    <link rel="stylesheet" href="./css/public-footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/public-navbar.css" type="text/css">
+    <%- include('../includes/scripts') %>
+</head>
+<body>
+    <%- include('../includes/navbar') %>
+    <main>
+        <div class="header">
+            <h1>BLOGS</h1>
+                    <% if (numberOfBlogPost === 0) { %>
+                        <p>Unfortunately, we have no post yet.</p>
+                    <% } else { %>
+        </div>
+        <div class="posts-container">
+            <p class="found">We found <%= numberOfBlogPost %> blog-post.</p>
+                    <ul id="blog-posts-list">
+                        <% for (const blogPost of blogPosts){ %>
+                            <%- include('../includes/blogs-details/blog-post-list', {blogPost: blogPost}) %>
+                        <% } %>
+                    </ul>
+                <% } %>
+        </div>
+        <aside class="mini-card">
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </aside>
+    </main>
+    <%- include('../includes/footer') %>
+    <script type="text/javascript" src="./scripts/blog-post.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.hamburger-home div {
+  width: 30px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 5px;
+  transition: all 0.3s ease;
+  z-index: 1003;
+}
+.hamburger-home {
+  display: none;
+}
+.toggle-home .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle-home .line2 {
+  opacity: 0;
+}
+.toggle-home .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* media queries */
+@media only screen and (max-width: 940px) {
+  .nav {
+    position: relative;
+    z-index: 1001;
+    padding: 1.25rem 2rem;
+  }
+  .hamburger-home {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+    mix-blend-mode: difference;
+  }
+  .navbar-home {
+    position: absolute;
+    background: var(--secondary-color);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(0px at 90% -20%);
+    -webkit-clip-path: circle(0px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .navbar-home li a {
+    font-size: var(--navbar-font-size-responsive);
+    color: var(--bg-color);
+    font-family: var(--navbar-font);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .navbar-home.open-home {
+    clip-path: circle(1100px at 70% -10%);
+    -webkit-clip-path: circle(1100px at 70% -10%);
+    pointer-events: all;
+  }
+  .navbar-home li::after {
+    height: 3px;
+    background: var(--bg-color);
+  }
+  .navbar-home li {
+    opacity: 0;
+  }
+  .navbar-home li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .navbar-home li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .navbar-home li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .navbar-home li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+  .navbar-home li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .navbar-home li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  .navbar-home li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+  li.fade-home {
+    opacity: 1;
+  }
+}

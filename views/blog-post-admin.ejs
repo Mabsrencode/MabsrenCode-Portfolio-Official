@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../includes/meta') %>
+    <title>Dashboard | MabsrenCode</title>
+    <%- include('../includes/favicon') %>
+    <link rel="stylesheet" href="./css/shared-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/blog-post-admin.css" type="text/css">
+</head>
+<body>
+    <h1>Blog Post</h1>
+    <form class="blog-post-form" action="/blog-post-admin" method="post">
+        <div class="main-container">
+            <div class="container-1">
+                <div class="item-1">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" placeholder="Title" required>
+                </div>
+                <div class="item-2">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description" placeholder="Description" required>
+                </div>
+                <div class="item-3">
+                    <label for="link">Link</label>
+                    <input type="url" name="link" id="link" placeholder="Link" required>
+                </div>
+            </div>
+            
+            <div class="container-2">
+                <div class="item-4">
+                    <label for="embed">Embed</label>
+                    <textarea name="embed" id="embed" cols="60" rows="9"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="btn-submit">
+             <input type="submit" value="Submit" class="btn">
+        </div>
+    </form>
+    <div>
+        <div id="messages" style="margin-top: 20px;"></div>
+        <form id="message-form" style="margin-top: 20px;">
+            <input type="text" id="message-input" placeholder="Enter your message" autocomplete="off"/>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        const messagesDiv = document.getElementById('messages');
+        const messageForm = document.getElementById('message-form');
+        const messageInput = document.getElementById('message-input');
+
+
+        messageForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = messageInput.value.trim();
+            if (message) {
+                socket.emit('admin:message', message);
+                messageInput.value = '';
+            }
+        });
+
+        socket.on('admin:message', (message) => {
+            const messageElement = document.createElement('p');
+            messageElement.textContent = `Dev.Reniel: ${message}`;
+            messagesDiv.appendChild(messageElement);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        });
+
+        socket.on('user:message', (message) => {
+            const messageElement = document.createElement('p');
+            messageElement.textContent = `ID:${socket.id} \n Message: ${message}`;
+            messagesDiv.appendChild(messageElement);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        });
+    </script>
+    <!-- <script type="text/javascript" src="./scripts/cookies.js"></script> -->
+    <script type="text/javascript" src="./scripts/blog-post.js"></script>
+</body>
+</html>

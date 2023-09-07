@@ -1,0 +1,22 @@
+<li class="blog-post-item">
+    <article>
+        <div class="article-descriptions">
+            <h4>
+                <%= blogPost.title %>
+
+            </h4>
+
+            <p>
+                <%= blogPost.description %>
+            </p>
+            <div class="blog-post-meta" id="blog_post_embed">
+                <%- blogPost.embed %>
+            </div>
+            <div class="blog-post-actions">
+                <!-- <a class="btn" href="<%= blogPost.link  %>" target="_blank">View</a> -->
+                <a class="btn" href="/blog-post/<%= blogPost.id %>">View</a>
+            </div>
+        </div>
+        
+    </article>
+</li>
