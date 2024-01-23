@@ -7,6 +7,7 @@ let phone = document.getElementById("phone");
 let config = document.getElementById("configuration");
 let configSuccess = document.getElementById("configuration-container");
 let configError = document.getElementById("configuration-container-error");
+let messageError = document.getElementById("message-error");
 let btnSuccess = document.getElementById("btn-success");
 let btnError = document.getElementById("btn-error");
 let btnSubmit = document.getElementById("btn-submit");
@@ -51,6 +52,20 @@ contactForm.addEventListener("submit", (e) => {
   btnSubmit.disabled = true;
   btnSubmit.innerHTML = "Sending...";
   e.preventDefault();
+
+  if (
+    !message.value ||
+    !name.value ||
+    !email.value ||
+    !subject.value ||
+    !phone.value
+  ) {
+    configurationError();
+    messageError.innerHTML = "Please fill in all required fields.";
+    btnSubmit.disabled = false;
+    btnSubmit.innerHTML = "Submit";
+    return;
+  }
   let formData = {
     message: message.value,
     name: name.value,
