@@ -73,8 +73,8 @@
   position: relative;
 }
 h2.glitch1 {
-  -webkit-text-stroke: 1px var(--primary-color);
-  color: var(--bg-color);
+  /* -webkit-text-stroke: 1px var(--primary-color); */
+  /* color: var(--bg-color); */
   margin-top: 3rem;
 }
 h2.glitch2 {
