@@ -1,5 +1,6 @@
 require("dotenv").config();
 const fs = require("fs");
+const cron = require("node-cron");
 const path = require("path");
 const express = require("express");
 const uuid = require("uuid");
@@ -332,6 +333,16 @@ io.on("connection", (socket) => {
     }
   });
 });
+const pingServer = () => {
+  http
+    .get("http://your-server-url", (res) => {
+      console.log("Pinged server, status code:", res.statusCode);
+    })
+    .on("error", (err) => {
+      console.error("Error pinging server:", err.message);
+    });
+};
 http.listen(PORT, () => {
   console.log(`Server running on port ${PORT} localhost:3000`);
+  cron.schedule("*/5 * * * *", pingServer);
 });
