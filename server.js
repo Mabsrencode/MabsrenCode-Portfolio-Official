@@ -335,7 +335,7 @@ io.on("connection", (socket) => {
 });
 const pingServer = () => {
   http
-    .get("http://your-server-url", (res) => {
+    .get("https://mabsrencode-portfolio-official.onrender.com", (res) => {
       console.log("Pinged server, status code:", res.statusCode);
     })
     .on("error", (err) => {
